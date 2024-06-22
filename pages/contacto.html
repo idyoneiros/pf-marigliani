@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--TYPE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <nav id="topnav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <img src="../assets/logo-terapias-complementarias-get.png" alt="Logo Terapias Complementarias" height="86px" width="86px">
+                    <a href="../index.html"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="./quien-soy.html">Quien Soy</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <button class="contacto-btn">Contacto</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <img src="../assets/natura-frame.png" alt="Fotografía de hoja verde" width="30%">
+            <h2>Envia tu consulta</h2>
+            <form action="" method="POST"> <!-- Debería crear un archivo php-->
+                <label for="tipo-consulta">Tipo de mensaje</label>
+                <select>
+                    <option value="mensaje">Consulta</option>
+                    <option value="sesion">Agendar una sesión</option>
+                </select><br>
+                <div id="sesion-consulta">
+                    <p>Elegí el servicio y me contactaré contigo por correo electrónico</p>
+                    <select>
+                        <option value="biodecodificacion">Biodescodificación</option>
+                        <option value="reiki">Reiki</option>
+                        <option value="registros-akashicos">Registros Akáshicos</option>
+                        <option value="coaching-respiracion">Coaching de Respiración</option>
+                        <option value="coaching-meditacion">Coaching de Meditación</option>
+                    </select><br>
+                </div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required><br>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+
+                <button type="submit" class="enviar-btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <img src="../assets/logo-texto.png" alt="Logo Texto Terapias Complementarias GET" width="322px" height="87px">
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/terapiascomplementariasget?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="></a>
+                <img src="../assets/sm-instagram.png" alt="Logo instagram" width="24px" height="24px">
+            </li>
+            <li>
+                <a href=""></a><!-- Link whatsapp -->
+                <img src="../assets/sm-whatsapp.png" alt="Logo Whatsapp" width="24px" height="24px">
+            </li>
+            <li>
+                terapiascomplementariasget@gmail.com
+            </li>
+        </ul>
+        <button class="contacto-btn">Contacto</button>
+    </footer>
+</body>
+</html>

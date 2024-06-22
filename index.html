@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--TYPE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+    <!-- TYPE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+   <title>Gonzalo Eraña: Terapias Complementarias</title>
+</head>
+<body>
+    <header>
+        <nav id="topnav">
+            <div class="logo-container">
+                <a href="./index.html">
+                    <img src="./assets/logo-terapias-complementarias-get.png" alt="Logo Terapias Complementarias" height="86px" width="86px">
+                </a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="./pages/quien-soy.html">Quién Soy</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./pages/blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./servicios.html">Servicios</a>
+                </li>
+                <li class="conocer-btn-container">
+                    <button class="contacto-btn">Agendar una sesión</button>
+                </li>
+            </ul>
+        </nav>        
+    </header>
+    <main id="hero-section">
+        <div class="hero-text-container">
+            <h1>Gonzalo Eraña <br> Terapias Complementarias</h1>
+            <p>Explorá un enfoque equilibrado para la salud y el bienestar</p>
+            <a href="./pages/servicios.html" class="contacto-btn">Conocer más</a>
+        </div>
+        <div class="hero-img-container">
+            <img src="./assets/plantas2.png" alt="Planta" width="500px" height="500px">
+        </div>
+    </main>
+    <section id="testimonios-section">
+        <h2 class="testimonios-heading">Testimonios</h2>
+        <article class="testimonios">
+            <p class="testimonios-paragraph">"Gonzalo me ha ayudado a encontrar paz y claridad. <br> Su método es claro, respetuoso y muy efectivo. 
+            Recomiendo sus terapias a quienes buscan una forma seria y profunda de sanación."</p>
+            <img src="./assets/img-testimonios.png" alt="Foto de una mujer sonriendo">
+            <p class="testimonios-nombre">Florencia P.</p>
+            <!-- Botón para mostrar más testimonios -->
+            <div class="btn-testimonios-container">
+                <button class="btn-testimonios">
+                <img src="./assets/arrow-right.png" alt="Mostrar más testimonios">
+                </button>
+            </div>
+        </article>
+    </section>
+    <div class="separator">
+    </div>
+    <section class="servicios-container">
+        <h2 class="servicios-heading">Servicios</h2>
+        <div class="servicios-items">
+            <article class="serv servicios-reiki"> 
+                <img src="./assets/icon-flower1.png" alt="Icono Servicios Reiki">
+                <a href="./servicios.html#reiki">Reiki</a>
+            </article>
+            <article class="serv servicios-bio"> 
+                <img src="./assets/icon-flower2.png" alt="Icono Servicios Biodescodificacion">
+                <a href="./servicios.html#biodescodificacion">Biodescodificación</a>
+            </article>
+            <article class="serv servicios-regi">
+                <img src="./assets/icon-eye.png" alt="Icono Servicios Registros Akashicos">
+                <a href="./servicios.html#registros-akashicos">Registros Akáshicos</a>
+            </article>
+            <article class="serv servicios-resp">
+                <img src="./assets/icon-meditation1.png" alt="Icono Servicios Coaching de Respiracion">
+                <a href="./servicios.html#respiracion">Coaching de Respiración</a>
+            </article>
+            <article class="serv servicios-medi"> 
+                <img src="./assets/icon-meditation2.png" alt="Icono Servicios Coaching de Meditacion">
+                <a href="./servicios.html#meditacion">Coaching de Meditación</a>
+            </article>
+        </div>
+    </section>
+    <section class="contacto-container">
+        <div class="row align-items-center">
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="contacto-img-container">
+                    <img src="./assets/natura-frame.png" alt="Fotografía de hoja verde">
+                </div>
+            </div>
+            <div class="col-md-6 contacto-form-container-container">
+                <div class="contacto-form-container">
+                    <h2 class="contacto-heading">Contacto</h2>
+                    <form class="contacto-form">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-6 mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control input-transparent" id="nombre" aria-describedby="emailHelp">
+                            </div>
+                            <div class="col-md-12 col-lg-6 mb-3">
+                                <label for="apellido" class="form-label">Apellido</label>
+                                <input type="text" class="form-control input-transparent" id="apellido" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control input-transparent" id="email" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <label for="mensaje" class="form-label">Escribe tu mensaje</label>
+                            <input type="textarea" class="form-control input-transparent textarea" id="mensaje" aria-describedby="emailHelp">
+                        </div>
+                        <div class="contacto-btn-container">
+                            <button type="submit" class="contacto-enviar-btn">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-items-container">
+            <ul class="footer-list">
+                <li>
+                    <h2 class="heading-footer">Gonzalo Eraña <br> Terapias Complementarias</h2>
+                </li>
+                <div class="footer-list-social">
+                    <li>
+                        <a href="https://www.instagram.com/terapiascomplementariasget?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="></a>
+                        <img src="./assets/sm-instagram.png" alt="Logo instagram" width="24px" height="24px">
+                    </li>
+                    <li>
+                        <a href=""></a><!-- Link whatsapp -->
+                        <img src="./assets/sm-whatsapp.png" alt="Logo Whatsapp" width="24px" height="24px">
+                    </li>
+                </div>
+                <li class="footer-email">gonzaloerana@gmail.com</li>
+            </ul>
+            <div class="footer-logo-container">
+                <img src="./assets/logo-terapias-complementarias-get.png" alt="Logo Terapias Complementarias" height="86px" width="86px">
+            </div>
+            <button class="contacto-btn footer-btn">Agendar una sesión</button>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
