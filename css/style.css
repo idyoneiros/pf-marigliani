@@ -413,6 +413,7 @@ main {
 }
 .quien-soy-section {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -424,7 +425,7 @@ main {
 }
 .quien-soy-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     margin: 3em;
 }
@@ -440,9 +441,10 @@ main {
 }
 .quien-soy-img-container {
     text-align: center;
+    width: 50%;
 }
 .quien-soy-img-container img {
-    max-width: 100%;
+    max-width: 80%;
     max-height: 80%;
     height: auto;
 }
@@ -651,6 +653,41 @@ main {
     .contacto-enviar-btn:focus {
         background-color: var(--clr-grn-light);
     }
+    .quien-soy-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .quien-soy-section h1 {
+        font-size: 2em;
+    }
+    .quien-soy-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1.5em;
+    }
+    .quien-soy-text {
+        flex: 1;
+        width: 80%;
+    }
+    .quien-soy-text p {
+        font-family: 'Darker Grotesque', sans-serif;
+        font-size: 2em;
+        color: var(--clr-grn-dark);
+        margin: 2em, 0;
+    }
+    .quien-soy-img-container {
+        text-align: center;
+    }
+    .quien-soy-img-container img {
+        max-width: 100%;
+        max-height: 80%;
+        height: auto;
+    }
     .footer {
         width: 100%;
     }
@@ -848,6 +885,22 @@ main {
     }
     .servicios-reiki a:focus {
         color: var(--clr-hover);
+    }
+    .quien-soy-section h1 {
+        font-size: 2em;
+    }
+    .quien-soy-container {
+        margin: 1em;
+    }
+    .quien-soy-text {
+        flex: 1;
+        width: 90%;
+    }
+    .quien-soy-text p {
+        font-family: 'Darker Grotesque', sans-serif;
+        font-size: 1.5em;
+        color: var(--clr-grn-dark);
+        margin: 1em, 0;
     }
     .footer {
         width: 100%;
