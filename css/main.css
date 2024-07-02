@@ -1,0 +1,66 @@
+:root {
+  /* COLORES */
+  --clr-grn-dark:#0C4222;
+  --clr-grn-light:#1D9950;
+  --clr-n-grn: #81AC80;
+  --clr-blk: #1D1D1D;
+  --clr-grey: #313834;
+  --clr-grey-light: #515854;
+  --clr-white: #E2E2E2;
+  --clr-n-light: #D8DBC9;
+  --clr-n-olive: #D6D7CB;
+  --clr-n-brown: #A29483;
+  /* HOVER */
+  --clr-hover: #8d4b37;
+  /* TIPOGRAFIA */
+  font-family: "Darker grotesque", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  /* LISTAS */
+  list-style-type: none;
+  /* BORDES */
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--clr-n-light);
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Darker Grotesque", sans-serif;
+  list-style: none;
+  font-weight: 500;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #0C4222;
+}
+
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 3em;
+  color: var(--clr-grn-dark);
+}
+
+h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 3em;
+  color: var(--clr-grn-light);
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */
