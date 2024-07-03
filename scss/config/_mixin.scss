@@ -1,0 +1,10 @@
+// Tamaños
+@mixin sizes ($width, $height) {
+    height: $height;
+    width: $width;
+}
+//Espacios
+@mixin spaces ($padding, $margin) {
+    padding: $padding;
+    margin: $margin;
+}

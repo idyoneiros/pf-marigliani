@@ -1,4 +1,11 @@
 // Reset
+@import './config/vars';
 @import './config/reset';
+@import './config/mixin';
 //Layout
+@import './components/cabeza';
+@import './components/forms';
+@import './components/hero';
+@import './components/pie';
 //Media Queries
+@import './mq';
