@@ -1,0 +1,35 @@
+//Tablets
+@media screen and (max-width: 768px) {
+    //Blog
+    .blog-title {
+        font-family: $text-font;
+        font-weight: 700;
+        font-size: 2em;
+        color: $green-dark
+    }
+    .blog-entry {
+        overflow: hidden;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+    }
+    .blog-card-title {
+        font-family: $title-font;
+        color: $black;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .blog-card-text {
+        font-family: $text-font;
+        color: $grey;
+        text-align: center;
+        font-size: 1em;
+    }
+    .blog-card .blog-leer-mas {
+        font-family: $text-font;
+        color: $color-hover;
+        text-align: center;
+        display: block; 
+        margin: 0 auto;
+    }
+}

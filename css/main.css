@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .fs-s {
   font-size: 1.5em;
 }
@@ -218,9 +217,42 @@ main {
   font-family: "Darker Grotesque", sans-serif;
   color: #8d4b37;
   text-align: center;
-  display: block; /* Esto ayuda a centrar el texto */
-  margin: 0 auto; /* Esto centra el elemento si es display block */
-  text-decoration: none; /* Asegúrate de que no haya subrayado */
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-title {
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    color: #0C4222;
+  }
+  .blog-entry {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .blog-card-title {
+    font-family: "DM Serif Display", serif;
+    color: #1D1D1D;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .blog-card-text {
+    font-family: "Darker Grotesque", sans-serif;
+    color: #313834;
+    text-align: center;
+    font-size: 1em;
+  }
+  .blog-card .blog-leer-mas {
+    font-family: "Darker Grotesque", sans-serif;
+    color: #8d4b37;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
