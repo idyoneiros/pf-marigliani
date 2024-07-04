@@ -3,11 +3,14 @@
 @import './config/reset';
 @import './config/mixin';
 //Layout
-@import '.components/button';
+@import './components/button';
 @import './components/cabeza';
-@import './components/forms';
-@import './components/hero';
 @import './components/pie';
+@import './components/hero';
+@import './components/bio';
+@import './components/servicios';
+@import './components/testimonios';
 @import './components/blog';
+@import './components/forms';
 //Media Queries
 @import './mq';

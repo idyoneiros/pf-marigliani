@@ -1,0 +1,58 @@
+#testimonios-section {
+    display: grid;
+    background-color: var(--clr-n-brown);
+    margin-top: 48px;
+    height: 100vh;
+}
+.testimonios {
+    background-color: var(--clr-n-brown);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.testimonios-heading {
+    font-size: 2em;
+    color: var(--clr-n-olive);
+    margin-top: 64px;
+}
+.testimonios-paragraph {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3em;
+    text-align: center;
+    color: var(--clr-n-light);
+    max-width: 70%;
+    margin: 0 auto;
+}
+.testimonios-nombre {
+    font-family: 'Darker Grotesque', sans-serif;
+    color: var(--clr-n-olive);
+    font-size: 2em;
+    text-align: center;
+}
+.testimonios img {
+    margin-top: 32px;
+    width: 5%;
+    justify-content: center;
+}
+.btn-testimonios-container {
+    right: 20px;
+    position: absolute;
+}
+.btn-testimonios {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 16px;
+}
+.btn-testimonios img {
+    width: 24px;
+    height: 24px;
+}
+.separator {
+    height: 56px;
+    width: 100%;
+    background-image: url(../assets/natura3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
