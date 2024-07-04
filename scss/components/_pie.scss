@@ -1,0 +1,36 @@
+.footer {
+    width: 100%;
+}
+.footer-items-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px 16px;
+}
+.heading-footer {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2em;
+    color: var(--clr-grn-dark);
+    text-align: left;
+}
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-list-social {
+    display: flex;
+}
+.footer-list-social li {
+    padding-right: 16px;
+}
+.footer-email {
+    color: var(--clr-grn-dark);
+    font-size: 1.5em;
+}
+.footer-logo-container {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+}

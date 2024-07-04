@@ -29,12 +29,15 @@
     color: $grey;
     text-align: center;
 }
-.card-body {
+.blog-card {
     justify-content: center;
     align-items: center;
 }
-.card-body a{
+.blog-card .blog-leer-mas {
     font-family: $text-font;
     color: $color-hover;
     text-align: center;
+    display: block; /* Esto ayuda a centrar el texto */
+    margin: 0 auto; /* Esto centra el elemento si es display block */
+    text-decoration: none; /* Asegúrate de que no haya subrayado */
 }
