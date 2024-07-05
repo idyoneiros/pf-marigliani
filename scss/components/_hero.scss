@@ -1,28 +1,27 @@
 #hero-section {
-    display: flex;
-    align-items: center;
+    @include flex-align-center;
     width: 100%;
     height: auto;
 }
 .hero-text-container {
     padding-left: 3em;
-}
-.hero-text-container h1 {
-    margin-bottom: 0;
-}
-.hero-text-container p {
-    margin-top: 0;
-    margin-bottom: 36px;
-    font-size: 1.5em;
+    h1 {
+        margin-bottom: 0;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 36px;
+        font-size: 1.5em;
+    }
 }
 .hero-img-container {
     display: flex;
     justify-content: flex-end;
     padding-right: 0%;
     flex: 1;
-}
-.hero-img-container img {
-    max-width: 70%;
-    height: auto;
-    margin-right: 0;
+    img {
+        max-width: 70%;
+        height: auto;
+        margin-right: 0;
+    }
 }
