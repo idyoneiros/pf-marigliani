@@ -160,35 +160,34 @@ main {
 
 .footer-items-container {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 64px 16px;
+  padding: 5.3em 1.3em;
 }
 
 .heading-footer {
   font-family: "DM Serif Display", serif;
   font-size: 2em;
-  color: var(--clr-grn-dark);
+  color: #0C4222;
   text-align: left;
 }
 
 .footer-list {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
+  height: 0;
+  width: 0;
 }
 
 .footer-list-social {
   display: flex;
 }
-
 .footer-list-social li {
-  padding-right: 16px;
+  padding-right: 1.3em;
 }
 
 .footer-email {
-  color: var(--clr-grn-dark);
+  color: #0C4222;
   font-size: 1.5em;
 }
 

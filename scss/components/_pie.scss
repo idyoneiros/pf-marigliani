@@ -2,35 +2,32 @@
     width: 100%;
 }
 .footer-items-container {
-    display: flex;
+    @include flex-align-center;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    padding: 64px 16px;
+    padding: 5.3em 1.3em;
 }
 .heading-footer {
-    font-family: 'DM Serif Display', serif;
+    font-family: $title-font;
     font-size: 2em;
-    color: var(--clr-grn-dark);
+    color: $green-dark;
     text-align: left;
 }
 .footer-list {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    @include sizes (0, 0)
 }
 .footer-list-social {
     display: flex;
-}
-.footer-list-social li {
-    padding-right: 16px;
+    li {
+        padding-right: 1.3em;
+    }
 }
 .footer-email {
-    color: var(--clr-grn-dark);
+    color: $green-dark;
     font-size: 1.5em;
 }
 .footer-logo-container {
     flex-grow: 1; 
-    display: flex;
-    justify-content: center;
+    @include flex-justify-center;
 }
