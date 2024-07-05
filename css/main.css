@@ -85,36 +85,32 @@ main {
 
 .contacto-btn {
   cursor: pointer;
-  background-color: var(--clr-grn-dark);
-  color: var(--clr-white);
+  background-color: #0C4222;
+  color: #E2E2E2;
   font-family: "Darker Grotesque", sans-serif;
-  font-size: 18px;
+  font-size: 1.5em;
   font-weight: 500;
-  border-radius: 16px;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  border-radius: 1.3em;
+  padding: 1em 2em;
   transition: background-color 0.3s ease;
+}
+.contacto-btn:hover {
+  background-color: #1D9950;
 }
 
 .contacto-enviar-btn {
   cursor: pointer;
-  background-color: var(--clr-grn-dark);
-  color: var(--clr-white);
+  background-color: #0C4222;
+  color: #E2E2E2;
   font-family: "Darker Grotesque", sans-serif;
-  font-size: 18px;
+  font-size: 1.5em;
   font-weight: 500;
-  border-radius: 16px;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  border-radius: 1.3em;
+  padding: 1em 2em;
   transition: background-color 0.3s ease;
 }
-
-.contacto-btn:hover {
-  background-color: var(--clr-grn-light);
+.contacto-enviar-btn:hover {
+  background-color: #1D9950;
 }
 
 #topnav {
