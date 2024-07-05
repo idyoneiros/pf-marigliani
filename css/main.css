@@ -246,8 +246,7 @@ main {
 }
 .quien-soy-section h1 {
   font-family: "DM Serif Display", serif;
-  font-size: 2.5em;
-  color: var(--clr-grn-dark);
+  color: #0C4222;
   text-align: center;
 }
 
@@ -264,8 +263,7 @@ main {
 }
 .quien-soy-text p {
   font-family: "Darker Grotesque", sans-serif;
-  font-size: 1.5em;
-  color: var(--clr-grn-dark);
+  color: #0C4222;
   margin: 2em;
 }
 
