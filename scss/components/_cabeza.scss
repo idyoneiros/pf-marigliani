@@ -1,19 +1,16 @@
 #topnav {
     background-color: $green-light;
-    display: flex;
-    align-items: center;
+    @include flex-align-center;
     justify-content: space-between;
     padding: 0 1.3em;
     margin-bottom: 0;
 }
 .logo-container {
-    display: flex;
-    align-items: center;
+    @include flex-align-center;
 }
 .nav-list {
-    display: flex;
+    @include flex-align-center;
     justify-content: flex-end;
-    align-items: center;
     gap: 8pt;
     list-style: none;
     @include spaces(0, 0);
