@@ -114,12 +114,12 @@ main {
 }
 
 #topnav {
-  background-color: var(--clr-n-light);
+  background-color: #1D9950;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 16px;
-  margin-bottom: 0px;
+  padding: 0 1.3em;
+  margin-bottom: 0;
 }
 
 .logo-container {
@@ -133,23 +133,21 @@ main {
   align-items: center;
   gap: 8pt;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .nav-item {
   font-size: 1.5em;
 }
-
 .nav-item a {
   text-decoration: none;
-  color: var(--clr-grn-dark);
-  padding: 8pt;
+  color: #0C4222;
+  padding: 0.8em;
   transition: color 0.3s ease;
 }
-
 .nav-item a:hover {
-  color: var(--clr-hover);
+  color: #8d4b37;
 }
 
 .menu-toggle {
