@@ -8,31 +8,28 @@
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: var(--clr-n-light);
-        padding: 16px;
+        background-color: $olive;
+        padding: 1.3em;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         z-index: 1;
     }
     .nav-item {
-        margin-bottom: 8px;
+        margin-bottom: 0.6em;
     }
     .menu-toggle {
         display: block;
         cursor: pointer;
-        background-color: var(--clr-grn-dark);
-        color: var(--clr-white);
-        border-radius: 16px;
-        padding-right: 24px;
-        padding-left: 24px;
-        padding-top: 12px;
-        padding-bottom: 12px;
+        background-color: $green-dark;
+        color: $white;
+        border-radius: 1.3em;
+        padding: 1em 2em;
     }
     //Blog
     .blog-title {
         font-family: $text-font;
         font-weight: 700;
         font-size: 2em;
-        color: $green-dark
+        color: $green-dark;
     }
     .blog-card-title {
         font-family: $title-font;
@@ -58,38 +55,35 @@
         width: 100%;
     }
     .footer-items-container {
-        display: flex;
+        @include flex-align-center;
         flex-direction: row;
-        align-items: center;
         justify-content: space-between;
-        padding: 64px 16px;
+        padding: 5.3em 1.3em;
     }
     .heading-footer {
-        font-family: 'DM Serif Display', serif;
+        font-family: $title-font;
         font-size: 1em;
-        color: var(--clr-grn-dark);
+        color: $green-dark;
         text-align: left;
     }
     .footer-list {
         list-style-type: none;
-        padding: 0;
-        margin: 0;
+        @include sizes (0, 0)
     }
     .footer-list-social {
         display: flex;
         flex-direction: column;
-    }
-    .footer-list-social li {
-        padding-right: 16px;
+        li {
+            padding-right: 1.3em;
+        }
     }
     .footer-email {
-        color: var(--clr-grn-dark);
+        color: $green-dark;
         font-size: 1.5em;
     }
     .footer-logo-container {
         flex-grow: 1; 
-        display: flex;
-        justify-content: center;
+        @include flex-justify-center;
     }
 }
 //Telefono
@@ -101,136 +95,124 @@
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: var(--clr-n-light);
-        padding: 16px;
+        background-color: $olive;
+        padding: 1.3em;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         z-index: 1;
     }
     .nav-item {
-        margin-bottom: 8px;
+        margin-bottom: 0.6em;
     }
     .menu-toggle {
         display: block;
         cursor: pointer;
-        background-color: var(--clr-grn-dark);
-        color: var(--clr-white);
-        border-radius: 16px;
-        padding-right: 24px;
-        padding-left: 24px;
-        padding-top: 12px;
-        padding-bottom: 12px;
+        background-color: $green-dark;
+        color: $white;
+        border-radius: 1.3em;
+        padding: 1em 2em;
     }
     #hero-section {
-        display: flex;
-        align-items: center;
+        @include flex-align-center;
         width: 100%;
         height: auto;
         margin-top: 3em;
     }
     .hero-text-container {
         padding-left: 3em;
-    }
-    .hero-text-container h1 {
-        margin-bottom: 0;
-        font-size: 2em;
-    }
-    .hero-text-container p {
-        margin-top: 0;
-        margin-bottom: 36px;
-        font-size: 1.5em;
+        h1 {
+            margin-bottom: 0;
+            font-size: 2em;
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 3em;
+            font-size: 1.5em;
+        }
     }
     .hero-img-container {
         display: flex;
         justify-content: flex-end;
         padding-right: 0%;
         flex: 1;
-    }
-    .hero-img-container img {
-        max-width: 100%;
-        height: auto;
-        margin-right: 0;
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 0;
+        }
     }
     .conocer-btn-container {
         text-align: center;
     }
     .contacto-btn {
-        background-color: var(--clr-grn-dark);
-        color: var(--clr-white);
-        font-family: 'Darker Grotesque', sans-serif;
+        background-color: $green-dark;
+        color: $white;
+        font-family: $text-font;
         font-size: 1em;
         font-weight: 500;
         border-radius: 1.5em;
-        padding-right: 6em;
-        padding-left: 6em;
-        padding-top: 0.7em;
-        padding-bottom: 0.7em;
+        padding: 0.7em 6em;
         transition: background-color 0.3s ease;
-    }
-    .contacto-btn:focus {
-        background-color: var(--clr-grn-light);
+        &:focus {
+            background-color: $green-light;
+        }
     }
     #testimonios-section {
         display: grid;
-        background-color: var(--clr-n-brown);
+        background-color: $brown;
         margin-top: 3em;
     }
     .testimonios {
-        background-color: var(--clr-n-brown);
-        display: flex;
+        background-color: $brown;
+        @include flex-align-justify-center;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        img {
+            margin-top: 2.3em;
+            width: 10%;
+            justify-content: center;
+        }
     }
     .testimonios-heading {
         font-size: 1.5em;
-        color: var(--clr-n-olive);
+        color: $olive-neutral;
         margin: 2em 0;
     }
     .testimonios-paragraph {
-        font-family: 'DM Serif Display', serif;
+        font-family: $title-font;
         font-size: 2em;
         text-align: center;
-        color: var(--clr-n-light);
+        color: $olive;
         max-width: 80%;
         line-height: 90%;
     }
     .testimonios-nombre {
-        font-family: 'Darker Grotesque', sans-serif;
-        color: var(--clr-n-olive);
+        font-family: $text-font;
+        color: $olive-neutral;
         font-size: 1em;
         text-align: center;
     }
-    .testimonios img {
-        margin-top: 2.3em;
-        width: 10%;
-        justify-content: center;
-    }
     .btn-testimonios-container {
-        right: 20px;
+        right: 1.6em;
         position: absolute;
     }
     .btn-testimonios {
-        cursor: pointer;
         background: none;
         border: none;
-        padding: 16px;
-    }
-    .btn-testimonios img {
-        width: 24px;
-        height: 24px;
+        padding: 1.3em;
+        img {
+            width: 2em;
+            height: 2em;
+        }
     }
     .servicios-container {
         margin: 1.5em auto;
         height: auto;
         max-width: 95%;
-        background-color: var(--clr-n-light);
-        display: flex;
+        background-color: $olive;
+        @include flex-align-justify-center;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
     .servicios-items {
-        padding: 16px 32px;
+        padding: 1.3em 2.6em;
         display: grid;
         grid-auto-columns: minmax(0, 1fr);
         grid-auto-flow: column;
@@ -239,7 +221,7 @@
     }
     .servicios-heading {
         font-size: 1.8em;
-        color: var(--clr-grn-dark);
+        color: $green-dark;
         margin: 2em auto;
         text-align: center;
     }
@@ -250,7 +232,7 @@
         margin-top: 0;
     }
     .servicios-reiki a:focus {
-        color: var(--clr-hover);
+        color: $color-hover;
     }
     .quien-soy-section h1 {
         font-size: 2em;
@@ -261,13 +243,13 @@
     .quien-soy-text {
         flex: 1;
         width: 90%;
-    }
-    .quien-soy-text p {
-        font-family: 'Darker Grotesque', sans-serif;
-        font-size: 1.5em;
-        color: var(--clr-grn-dark);
-        margin: 1em, 0;
-    }
+        p {
+            font-family: $text-font;
+            font-size: 1.5em;
+            color: $green-dark;
+            margin: 1em, 0;
+        }
+    } 
     .footer {
         width: 100%;
     }
@@ -281,9 +263,9 @@
         margin-top: 1rem;
     }
     .heading-footer {
-        font-family: 'DM Serif Display', serif;
+        font-family: $title-font;
         font-size: 1em;
-        color: var(--clr-grn-dark);
+        color: $green-dark;
         text-align: left;
     }
     .footer-list {
@@ -294,18 +276,17 @@
     .footer-list-social {
         display: flex;
         flex-direction: column;
-    }
-    .footer-list-social li {
-        padding-right: 16px;
+        li {
+            padding-right: 1.3em;
+        }
     }
     .footer-email {
-        color: var(--clr-grn-dark);
+        color: $green-dark;
         font-size: 1.5em;
     }
     .footer-logo-container {
         flex-grow: 1; 
-        display: flex;
-        justify-content: center;
+        @include flex-justify-center
     }
     .footer-btn {
         padding: 1em;
