@@ -129,8 +129,8 @@ main {
 
 .nav-list {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: flex-end;
   gap: 8pt;
   list-style: none;
   padding: 0;
@@ -234,8 +234,8 @@ main {
 
 .quien-soy-section {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 .quien-soy-section h1 {
@@ -246,8 +246,8 @@ main {
 
 .quien-soy-container {
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
+  flex-direction: row-reverse;
   margin: 3em;
 }
 
@@ -422,19 +422,15 @@ main {
 
 .blog-heading {
   text-align: center;
-}
-
-.blog-title {
   font-family: "Darker Grotesque", sans-serif;
   font-weight: 700;
-  font-size: 28px;
   color: #0C4222;
 }
 
 .blog-entry {
   overflow: hidden;
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 0.8em;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -444,6 +440,11 @@ main {
 
 .blog-entry.square img {
   height: 50%;
+}
+
+.blog-card {
+  justify-content: center;
+  align-items: center;
 }
 
 .blog-card-title {
@@ -458,11 +459,6 @@ main {
   text-align: center;
 }
 
-.blog-card {
-  justify-content: center;
-  align-items: center;
-}
-
 .blog-card .blog-leer-mas {
   font-family: "Darker Grotesque", sans-serif;
   color: #8d4b37;
@@ -473,14 +469,13 @@ main {
 
 .contacto-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  background-color: var(--clr-n-grn);
-  padding: 64px 32px;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #81AC80;
+  padding: 5.3em 2.6em;
   height: 100%;
 }
-
 .contacto-container img {
   width: 70%;
   height: auto;
@@ -500,14 +495,13 @@ main {
 
 .contacto-heading {
   font-family: "DM Serif Display", serif;
-  font-size: 2em;
-  color: var(--clr-grn-dark);
+  color: #0C4222;
 }
 
 .contacto-form {
   font-size: 1.5em;
-  color: var(--clr-grn-dark);
-  padding: 8px 0;
+  color: #0C4222;
+  padding: 0.6em 0;
 }
 
 .input-transparent {
@@ -516,14 +510,13 @@ main {
   opacity: 0.7;
   height: 3em;
 }
+.input-transparent:focus {
+  border-color: transparent;
+  box-shadow: 0 0 16px #0C4222;
+}
 
 .textarea {
   height: 10em;
-}
-
-.input-transparent:focus {
-  border-color: transparent;
-  box-shadow: 0 0 16px var(--clr-grn-dark);
 }
 
 .contacto-btn-container {

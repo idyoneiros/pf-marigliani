@@ -1,7 +1,6 @@
 .quien-soy-section {
-    display: flex;
+    @include flex-align-center;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     h1 {
         font-family: $title-font;
@@ -10,9 +9,8 @@
     }
 }
 .quien-soy-container {
-    display: flex;
+    @include flex-align-center;
     flex-direction: row-reverse;
-    align-items: center;
     margin: 3em;
 }
 .quien-soy-text {

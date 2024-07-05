@@ -1,20 +1,16 @@
 .contacto-container {
-    display: flex;
+    @include flex-align-justify-center;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--clr-n-grn);
-    padding: 64px 32px;
+    background-color: $green-neutral;
+    padding: 5.3em 2.6em;
     height: 100%;
-}
-.contacto-container img {
-    width: 70%;
-    height: auto;
+    img {
+        width: 70%;
+        height: auto;
+    }
 }
 .contacto-img-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-align-justify-center;
 }
 .contacto-form-container {
     display: flex;
@@ -22,27 +18,26 @@
     align-items: start;
 }
 .contacto-heading {
-    font-family: 'DM Serif Display', serif;
-    font-size: 2em;
-    color: var(--clr-grn-dark);
+    font-family: $title-font;
+    color: $green-dark;
 }
 .contacto-form {
     font-size: 1.5em;
-    color: var(--clr-grn-dark);
-    padding: 8px 0;
+    color: $green-dark;
+    padding: 0.6em 0;
 }
 .input-transparent {
     background-color: rgba(255, 255, 255, 0.5);
     border-color: rgba(255, 255, 255, 0.5);
     opacity: 0.7;
     height: 3em;
+    &:focus {
+        border-color: transparent;
+        box-shadow: 0 0 16px $green-dark;
+    }
 }
 .textarea {
     height: 10em;
-}
-.input-transparent:focus {
-    border-color: transparent;
-    box-shadow: 0 0 16px var(--clr-grn-dark);
 }
 .contacto-btn-container {
     display: flex;
