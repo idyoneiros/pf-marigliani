@@ -2,7 +2,15 @@
     margin: 0 auto;
     height: 100%;
     max-width: 70%;
-    background-color: var(--clr-n-light);
+    background-color: $olive;
+    @include flex-align-justify-center;
+    flex-direction: column;
+}
+.servicios-page-container {
+    margin: 2em auto;
+    height: 100%;
+    max-width: 70%;
+    background-color: $olive;
     @include flex-align-justify-center;
     flex-direction: column;
 }
