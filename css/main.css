@@ -94,6 +94,9 @@ main {
   padding: 1em 2em;
   transition: background-color 0.3s ease;
 }
+.contacto-btn a {
+  color: #E2E2E2;
+}
 .contacto-btn:hover {
   background-color: #1D9950;
 }
@@ -530,6 +533,25 @@ main {
 .contacto-btn-container {
   display: flex;
   justify-content: flex-end;
+}
+
+.contacto-page {
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.contacto-form-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.contacto-page-heading {
+  font-family: "DM Serif Display", serif;
+  color: #0C4222;
+  font-size: 2em;
+  text-align: center;
 }
 
 .slide-in-left {

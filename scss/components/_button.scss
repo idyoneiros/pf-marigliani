@@ -8,6 +8,9 @@
     border-radius: 1.3em;
     padding: 1em 2em;
     transition: background-color 0.3s ease;
+    a {
+        color: $white;
+    }
     &:hover {
         background-color: $green-light;
     }
