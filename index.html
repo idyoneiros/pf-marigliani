@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
    <title>Gonzalo Eraña: Terapias Complementarias</title>
 </head>
 <body>
@@ -46,21 +48,21 @@
     </header>
     <main id="hero-section">
         <div class="hero-text-container">
-            <h1>Gonzalo Eraña <br> Terapias Complementarias</h1>
-            <p>Explorá un enfoque equilibrado para la salud y el bienestar</p>
-            <a href="./pages/servicios.html" class="contacto-btn">Conocer más</a>
+            <h1 data-aos="fade-right">Gonzalo Eraña <br> Terapias Complementarias</h1>
+            <p data-aos="fade-right">Explorá un enfoque equilibrado para la salud y el bienestar</p>
+            <a href="./pages/servicios.html" class="contacto-btn" data-aos="fade-right">Conocer más</a>
         </div>
         <div class="hero-img-container">
             <img src="./assets/plantas2.png" alt="Planta" width="500px" height="500px">
         </div>
     </main>
     <section id="testimonios-section">
-        <h2 class="testimonios-heading">Testimonios</h2>
+        <h2 class="testimonios-heading" data-aos="fade-right">Testimonios</h2>
         <article class="testimonios">
-            <p class="testimonios-paragraph">"Gonzalo me ha ayudado a encontrar paz y claridad. <br> Su método es claro, respetuoso y muy efectivo. 
+            <p class="testimonios-paragraph" data-aos="fade-left">"Gonzalo me ha ayudado a encontrar paz y claridad. <br> Su método es claro, respetuoso y muy efectivo. 
             Recomiendo sus terapias a quienes buscan una forma seria y profunda de sanación."</p>
-            <img src="./assets/img-testimonios.png" alt="Foto de una mujer sonriendo">
-            <p class="testimonios-nombre">Florencia P.</p>
+            <img src="./assets/img-testimonios.png" data-aos="fade-right" alt="Foto de una mujer sonriendo">
+            <p class="testimonios-nombre" data-aos="fade-right">Florencia P.</p>
             <!-- Botón para mostrar más testimonios -->
             <div class="btn-testimonios-container">
                 <button class="btn-testimonios">
@@ -72,7 +74,7 @@
     <div class="separator">
     </div>
     <section class="servicios-container">
-        <h2 class="servicios-heading">Servicios</h2>
+        <h2 class="servicios-heading" data-aos="flip-right">Servicios</h2>
         <div class="servicios-items">
             <article class="serv servicios-reiki"> 
                 <img src="./assets/icon-flower1.png" alt="Icono Reiki">
@@ -100,13 +102,13 @@
         <div class="row align-items-center">
             <div class="col-md-6 d-flex justify-content-center">
                 <div class="contacto-img-container">
-                    <img src="./assets/natura-frame.png" alt="Fotografía de hoja verde">
+                    <img src="./assets/natura-frame.png" alt="Fotografía de hoja verde" data-aos="fade-right">
                 </div>
             </div>
             <div class="col-md-6 contacto-form-container-container">
                 <div class="contacto-form-container">
-                    <h2 class="contacto-heading fs-m">Contacto</h2>
-                    <form class="contacto-form">
+                    <h2 class="contacto-heading fs-m" data-aos="fade-right">Contacto</h2>
+                    <form class="contacto-form" data-aos="fade-left">
                         <div class="row">
                             <div class="col-md-12 col-lg-6 mb-3">
                                 <label for="nombre" class="form-label">Nombre</label>
@@ -161,5 +163,10 @@
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

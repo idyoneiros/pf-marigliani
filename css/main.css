@@ -160,6 +160,9 @@ main {
 .footer {
   width: 100%;
   margin: 0 auto;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 
 .footer-items-container {
@@ -281,9 +284,7 @@ main {
 }
 
 .servicios-page-container {
-  margin: 6em 5em;
-  height: 100vh;
-  max-width: 70%;
+  margin: 0 auto;
   background-color: #D8DBC9;
   display: flex;
   align-items: center;
@@ -356,6 +357,10 @@ main {
   grid-column: 4;
   grid-row: 2;
   line-height: 170%;
+}
+
+.servicios-description-container {
+  margin: 0 3em;
 }
 
 #testimonios-section {
@@ -542,8 +547,8 @@ main {
 
 .contacto-form-img-container {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin: 0 auto;
 }
 
@@ -552,66 +557,9 @@ main {
   color: #0C4222;
   font-size: 2em;
   text-align: center;
+  margin-top: 2em;
 }
 
-.slide-in-left {
-  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-@-webkit-keyframes slide-in-left {
-  0% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-left {
-  0% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-.fade-in-bottom {
-  -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
-  animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
-}
-
-@-webkit-keyframes fade-in-bottom {
-  0% {
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes fade-in-bottom {
-  0% {
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 @media screen and (max-width: 768px) {
   .nav-list {
     display: none;

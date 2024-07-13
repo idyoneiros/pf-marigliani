@@ -7,9 +7,7 @@
     flex-direction: column;
 }
 .servicios-page-container {
-    margin: 6em 5em;
-    height: 100vh;
-    max-width: 70%;
+    margin: 0 auto;
     background-color: $olive;
     @include flex-align-justify-center;
     flex-direction: column;
@@ -70,4 +68,7 @@
     grid-column: 4;
     grid-row: 2;
     line-height: 170%;
+}
+.servicios-description-container {
+    margin: 0 3em;
 }

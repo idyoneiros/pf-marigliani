@@ -50,9 +50,7 @@
     margin: 0 auto;
 }
 .contacto-form-img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-align-justify-center;
     margin: 0 auto;
 }
 .contacto-page-heading {
@@ -60,4 +58,5 @@
     color: $green-dark;
     font-size: 2em;
     text-align: center;
+    margin-top: 2em;
 }
