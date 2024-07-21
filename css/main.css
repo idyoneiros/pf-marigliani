@@ -359,8 +359,42 @@ main {
   line-height: 170%;
 }
 
+.servicios-h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 2em;
+  color: #0C4222;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
 .servicios-description-container {
-  margin: 0 3em;
+  margin: 6em 7em;
+}
+
+.servicios-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+  overflow: hidden;
+}
+.servicios-img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 3em;
+}
+
+.servicios-text-container-left, .servicios-text-container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.servicios-text-container-left p, .servicios-text-container-right p {
+  font-size: 2em;
+  line-height: 100%;
+  margin-bottom: 1em;
 }
 
 #testimonios-section {

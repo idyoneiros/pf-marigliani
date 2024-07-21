@@ -69,6 +69,35 @@
     grid-row: 2;
     line-height: 170%;
 }
+.servicios-h2 {
+    font-family: $title-font;
+    font-size: 2em;
+    color: $green-dark;
+    text-align: left;
+    margin-bottom: 1em;
+}
 .servicios-description-container {
-    margin: 0 3em;
+    margin: 6em 7em;
+}
+.servicios-img-container{
+    @include flex-align-justify-center;
+    height: 30%;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 3em;
+    }
+}
+.servicios-text-container-left, .servicios-text-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+    p {
+        font-size: 2em;
+        line-height: 100%;
+        margin-bottom: 1em;
+    }
 }
