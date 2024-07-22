@@ -240,8 +240,9 @@ main {
   justify-content: center;
 }
 .quien-soy-section h1 {
-  font-family: "DM Serif Display", serif;
+  font-size: 2em;
   color: #0C4222;
+  margin-bottom: 2em;
   text-align: center;
 }
 
@@ -453,11 +454,10 @@ main {
 }
 
 .blog-heading {
-  text-align: center;
-  font-family: "DM Serif Display", serif;
-  font-weight: 700;
+  font-size: 2em;
   color: #0C4222;
-  margin-bottom: 2em;
+  margin-bottom: 5em;
+  text-align: center;
 }
 
 .blog-container {
@@ -563,6 +563,7 @@ main {
 }
 
 .contacto-page {
+  display: flex;
   justify-content: center;
   margin: 0 auto;
 }
@@ -573,13 +574,17 @@ main {
   justify-content: center;
   margin: 0 auto;
 }
+.contacto-form-img-container img {
+  width: 80%;
+  align-self: center;
+}
 
 .contacto-page-heading {
-  font-family: "DM Serif Display", serif;
-  color: #0C4222;
   font-size: 2em;
+  color: #0C4222;
+  margin-bottom: 2em;
+  margin-top: 1em;
   text-align: center;
-  margin-top: 2em;
 }
 
 @media screen and (max-width: 768px) {
@@ -888,6 +893,17 @@ main {
   .servicios-description-container img {
     width: 100%;
   }
+  .blog-heading {
+    font-size: 2em;
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+    font-weight: 700;
+    color: #0C4222;
+    margin-bottom: 2em;
+  }
+  .blog-card-text {
+    font-size: 1.3em;
+  }
   .quien-soy-section h1 {
     font-size: 2em;
   }
@@ -903,6 +919,24 @@ main {
     font-size: 1.5em;
     color: #0C4222;
     margin: 1em, 0;
+  }
+  .contacto-page {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .contacto-form-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .contacto-page-heading {
+    font-size: 2em;
+    color: #0C4222;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    text-align: center;
   }
   .footer {
     width: 100%;

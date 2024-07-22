@@ -46,17 +46,22 @@
 }
 //Contacto Page - Agendar una sesion
 .contacto-page {
+    display: flex;
     justify-content: center;
     margin: 0 auto;
 }
 .contacto-form-img-container {
     @include flex-align-justify-center;
     margin: 0 auto;
+    img {
+        width: 80%;
+        align-self: center;
+    }
 }
 .contacto-page-heading {
-    font-family: $title-font;
-    color: $green-dark;
     font-size: 2em;
+    color: $green-dark;
+    margin-bottom: 2em;
+    margin-top: 1em;
     text-align: center;
-    margin-top: 2em;
 }
