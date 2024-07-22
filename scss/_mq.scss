@@ -43,6 +43,14 @@
     .servicios-h2 {
         margin: 1em 0;
     }
+    .servicios-page-items {
+        padding: 1.3em 2.6em;
+        display: grid;
+        grid-auto-columns: minmax(0, 1fr);
+        grid-auto-flow: column;
+        grid-gap: 10px;
+        width: 100%;
+    }
     //Contacto Section Index
     .contacto-container {
         @include flex-align-justify-center;
@@ -135,6 +143,7 @@
 }
 //Telefono
 @media screen and (max-width: 480px) {
+    //Nav Bar
     .nav-list {
         display: none;
         flex-direction: column;
@@ -158,6 +167,7 @@
         border-radius: 1.3em;
         padding: 1em 2em;
     }
+    //Hero
     #hero-section {
         @include flex-align-center;
         width: 100%;
@@ -203,6 +213,7 @@
             background-color: $green-light;
         }
     }
+    //Testimonios
     #testimonios-section {
         display: grid;
         background-color: $brown;
@@ -237,19 +248,7 @@
         font-size: 1em;
         text-align: center;
     }
-    .btn-testimonios-container {
-        right: 1.6em;
-        position: absolute;
-    }
-    .btn-testimonios {
-        background: none;
-        border: none;
-        padding: 1.3em;
-        img {
-            width: 2em;
-            height: 2em;
-        }
-    }
+    //Servicios Section Index
     .servicios-container {
         margin: 1.5em auto;
         height: auto;
@@ -260,11 +259,13 @@
     }
     .servicios-items {
         padding: 1.3em 2.6em;
-        display: grid;
-        grid-auto-columns: minmax(0, 1fr);
-        grid-auto-flow: column;
-        gap: 1.5em;
+        display: flex;
+        flex-direction: column;
         width: auto;
+    }
+    .serv {
+        width: 50%;
+        margin: 0 auto;
     }
     .servicios-heading {
         font-size: 1.8em;
@@ -281,6 +282,32 @@
     .servicios-reiki a:focus {
         color: $color-hover;
     }
+    //Servicios Section Page
+    .servicios-h2 {
+        margin: 1em 0;
+    }
+    .servicios-page-items {
+        padding: 1.3em 2.6em;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .serv {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .servicios-description-container {
+        padding: 0 1.3em;
+        margin: 0 auto;
+        box-sizing: border-box;
+        p {
+            font-size: 1.5em;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    //Quien Soy Page
     .quien-soy-section h1 {
         font-size: 2em;
     }
@@ -297,32 +324,33 @@
             margin: 1em, 0;
         }
     } 
+    //Footer
     .footer {
         width: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;
     }
     .footer-items-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .footer-items-container .footer-btn {
-        order: 1;
-        align-self: flex-start;
-        margin-top: 1rem;
+        @include flex-align-center;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 2em;
     }
     .heading-footer {
         font-family: $title-font;
-        font-size: 1em;
+        font-size: 1.3em;
         color: $green-dark;
         text-align: left;
+        width: fit-content;
     }
     .footer-list {
         list-style-type: none;
-        padding: 0;
-        margin: 0;
+        @include sizes (0, 0);
+        margin-bottom: 2em;
     }
     .footer-list-social {
         display: flex;
-        flex-direction: column;
         li {
             padding-right: 1.3em;
         }
@@ -332,12 +360,7 @@
         font-size: 1.5em;
     }
     .footer-logo-container {
-        flex-grow: 1; 
-        @include flex-justify-center
+        display: none;
     }
-    .footer-btn {
-        padding: 1em;
-        font-size: 1em;
-        line-height: 90%;
-    }
+
 }

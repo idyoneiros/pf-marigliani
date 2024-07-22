@@ -299,7 +299,7 @@ main {
   text-align: center;
 }
 
-.servicios-items {
+.servicios-items, .servicios-page-items {
   padding: 1.3em 2.6em;
   display: grid;
   grid-auto-columns: minmax(0, 1fr);
@@ -625,6 +625,14 @@ main {
   .servicios-h2 {
     margin: 1em 0;
   }
+  .servicios-page-items {
+    padding: 1.3em 2.6em;
+    display: grid;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    width: 100%;
+  }
   .contacto-container {
     display: flex;
     align-items: center;
@@ -822,19 +830,6 @@ main {
     font-size: 1em;
     text-align: center;
   }
-  .btn-testimonios-container {
-    right: 1.6em;
-    position: absolute;
-  }
-  .btn-testimonios {
-    background: none;
-    border: none;
-    padding: 1.3em;
-  }
-  .btn-testimonios img {
-    width: 2em;
-    height: 2em;
-  }
   .servicios-container {
     margin: 1.5em auto;
     height: auto;
@@ -847,11 +842,13 @@ main {
   }
   .servicios-items {
     padding: 1.3em 2.6em;
-    display: grid;
-    grid-auto-columns: minmax(0, 1fr);
-    grid-auto-flow: column;
-    gap: 1.5em;
+    display: flex;
+    flex-direction: column;
     width: auto;
+  }
+  .serv {
+    width: 50%;
+    margin: 0 auto;
   }
   .servicios-heading {
     font-size: 1.8em;
@@ -866,6 +863,30 @@ main {
   }
   .servicios-reiki a:focus {
     color: #8d4b37;
+  }
+  .servicios-h2 {
+    margin: 1em 0;
+  }
+  .servicios-page-items {
+    padding: 1.3em 2.6em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .serv {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .servicios-description-container {
+    padding: 0 1.3em;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .servicios-description-container p {
+    font-size: 1.5em;
+  }
+  .servicios-description-container img {
+    width: 100%;
   }
   .quien-soy-section h1 {
     font-size: 2em;
@@ -885,30 +906,32 @@ main {
   }
   .footer {
     width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
   }
   .footer-items-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .footer-items-container .footer-btn {
-    order: 1;
-    align-self: flex-start;
-    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 2em;
   }
   .heading-footer {
     font-family: "DM Serif Display", serif;
-    font-size: 1em;
+    font-size: 1.3em;
     color: #0C4222;
     text-align: left;
+    width: fit-content;
   }
   .footer-list {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    height: 0;
+    width: 0;
+    margin-bottom: 2em;
   }
   .footer-list-social {
     display: flex;
-    flex-direction: column;
   }
   .footer-list-social li {
     padding-right: 1.3em;
@@ -918,14 +941,7 @@ main {
     font-size: 1.5em;
   }
   .footer-logo-container {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-  }
-  .footer-btn {
-    padding: 1em;
-    font-size: 1em;
-    line-height: 90%;
+    display: none;
   }
 }
 
