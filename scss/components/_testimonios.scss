@@ -33,16 +33,6 @@
     font-size: 2em;
     text-align: center;
 }
-.btn-testimonios-container {
-    right: 20px;
-    position: absolute;
-}
-.btn-testimonios {
-    cursor: pointer;
-    background: none;
-    border: none;
-    padding: 1.3em;
-}
 .btn-testimonios img {
     @include sizes (2em, 2em)
 }

@@ -292,7 +292,7 @@ main {
   flex-direction: column;
 }
 
-.servicios-heading {
+.servicios-index-heading, .servicios-heading {
   font-size: 2em;
   color: #0C4222;
   margin-bottom: 5em;
@@ -437,18 +437,6 @@ main {
   color: #D6D7CB;
   font-size: 2em;
   text-align: center;
-}
-
-.btn-testimonios-container {
-  right: 20px;
-  position: absolute;
-}
-
-.btn-testimonios {
-  cursor: pointer;
-  background: none;
-  border: none;
-  padding: 1.3em;
 }
 
 .btn-testimonios img {
@@ -618,6 +606,53 @@ main {
     border-radius: 1.3em;
     padding: 1em 2em;
   }
+  .servicios-index-heading {
+    font-size: 2em;
+    color: #0C4222;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .servicios-container {
+    margin: 0 auto;
+    height: 100%;
+    max-width: 70%;
+    background-color: #D8DBC9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .servicios-h2 {
+    margin: 1em 0;
+  }
+  .contacto-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #81AC80;
+    padding: 5.3em 2.6em;
+    height: auto;
+  }
+  .contacto-container img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 2em;
+  }
+  .contacto-heading {
+    text-align: center;
+  }
+  .contacto-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contacto-form {
+    width: 100%;
+  }
+  .contacto-enviar-btn {
+    width: 100%;
+  }
   .blog-title {
     font-family: "Darker Grotesque", sans-serif;
     font-weight: 700;
@@ -645,28 +680,30 @@ main {
   }
   .footer {
     width: 100%;
+    margin: 0 auto;
   }
   .footer-items-container {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5.3em 1.3em;
+    padding: 2em 1.3em;
   }
   .heading-footer {
     font-family: "DM Serif Display", serif;
-    font-size: 1em;
+    font-size: 1.3em;
     color: #0C4222;
     text-align: left;
+    width: fit-content;
   }
   .footer-list {
     list-style-type: none;
     height: 0;
     width: 0;
+    margin-bottom: 2em;
   }
   .footer-list-social {
     display: flex;
-    flex-direction: column;
   }
   .footer-list-social li {
     padding-right: 1.3em;
@@ -676,9 +713,7 @@ main {
     font-size: 1.5em;
   }
   .footer-logo-container {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
+    display: none;
   }
 }
 @media screen and (max-width: 480px) {

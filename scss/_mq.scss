@@ -24,6 +24,52 @@
         border-radius: 1.3em;
         padding: 1em 2em;
     }
+    //Servicios Section Index
+    .servicios-index-heading {
+        font-size: 2em;
+        color: $green-dark;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .servicios-container {
+        margin: 0 auto;
+        height: 100%;
+        max-width: 70%;
+        background-color: $olive;
+        @include flex-align-justify-center;
+        flex-direction: column;
+    }
+    //Servicios Section Page
+    .servicios-h2 {
+        margin: 1em 0;
+    }
+    //Contacto Section Index
+    .contacto-container {
+        @include flex-align-justify-center;
+        flex-direction: row;
+        background-color: $green-neutral;
+        padding: 5.3em 2.6em;
+        height: auto;
+        img {
+            width: 70%;
+            height: auto;
+            margin-bottom: 2em;
+        }
+    }
+    .contacto-heading {
+        text-align: center;
+    }
+    .contacto-form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contacto-form {
+        width: 100%;
+    }
+    .contacto-enviar-btn {
+        width: 100%;
+    }
     //Blog
     .blog-title {
         font-family: $text-font;
@@ -53,26 +99,28 @@
     //Footer
     .footer {
         width: 100%;
+        margin: 0 auto;
     }
     .footer-items-container {
         @include flex-align-center;
         flex-direction: row;
         justify-content: space-between;
-        padding: 5.3em 1.3em;
+        padding: 2em 1.3em;
     }
     .heading-footer {
         font-family: $title-font;
-        font-size: 1em;
+        font-size: 1.3em;
         color: $green-dark;
         text-align: left;
+        width: fit-content;
     }
     .footer-list {
         list-style-type: none;
-        @include sizes (0, 0)
+        @include sizes (0, 0);
+        margin-bottom: 2em;
     }
     .footer-list-social {
         display: flex;
-        flex-direction: column;
         li {
             padding-right: 1.3em;
         }
@@ -82,8 +130,7 @@
         font-size: 1.5em;
     }
     .footer-logo-container {
-        flex-grow: 1; 
-        @include flex-justify-center;
+        display: none;
     }
 }
 //Telefono

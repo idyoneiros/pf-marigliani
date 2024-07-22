@@ -12,7 +12,7 @@
     @include flex-align-justify-center;
     flex-direction: column;
 }
-.servicios-heading {
+.servicios-index-heading, .servicios-heading {
     font-size: 2em;
     color: $green-dark;
     margin-bottom: 5em;
