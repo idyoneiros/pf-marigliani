@@ -78,6 +78,37 @@
     .contacto-enviar-btn {
         width: 100%;
     }
+    //Quien Soy Page
+    .quien-soy-section h1 {
+        font-size: 2em;
+    }
+    .quien-soy-container {
+        margin: 1em;
+    }
+    .quien-soy-text {
+        flex: 1;
+        width: 90%;
+        p {
+            font-family: $text-font;
+            font-size: 1.5em;
+            color: $green-dark;
+            margin: 1em, 0;
+        }
+    } 
+    .quien-soy-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .quien-soy-img-container {
+        text-align: center;
+        width: 100%;
+        img {
+            max-width: 90%;
+            max-height: 90%;
+            height: auto;
+        }
+    }
     //Blog
     .blog-title {
         font-family: $text-font;
@@ -143,6 +174,9 @@
 }
 //Telefono
 @media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
     //Nav Bar
     .nav-list {
         display: none;
@@ -336,6 +370,20 @@
             margin: 1em, 0;
         }
     } 
+    .quien-soy-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .quien-soy-img-container {
+        text-align: center;
+        width: 100%;
+        img {
+            max-width: 90%;
+            max-height: 90%;
+            height: auto;
+        }
+    }
     //Contacto Agendar Page
     .contacto-page {
         display: flex; 

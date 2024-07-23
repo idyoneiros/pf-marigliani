@@ -268,8 +268,8 @@ main {
   width: 50%;
 }
 .quien-soy-img-container img {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 90%;
+  max-height: 90%;
   height: auto;
 }
 
@@ -666,6 +666,36 @@ main {
   .contacto-enviar-btn {
     width: 100%;
   }
+  .quien-soy-section h1 {
+    font-size: 2em;
+  }
+  .quien-soy-container {
+    margin: 1em;
+  }
+  .quien-soy-text {
+    flex: 1;
+    width: 90%;
+  }
+  .quien-soy-text p {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 1.5em;
+    color: #0C4222;
+    margin: 1em, 0;
+  }
+  .quien-soy-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .quien-soy-img-container {
+    text-align: center;
+    width: 100%;
+  }
+  .quien-soy-img-container img {
+    max-width: 90%;
+    max-height: 90%;
+    height: auto;
+  }
   .blog-title {
     font-family: "Darker Grotesque", sans-serif;
     font-weight: 700;
@@ -730,6 +760,9 @@ main {
   }
 }
 @media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+  }
   .nav-list {
     display: none;
     flex-direction: column;
@@ -919,6 +952,20 @@ main {
     font-size: 1.5em;
     color: #0C4222;
     margin: 1em, 0;
+  }
+  .quien-soy-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .quien-soy-img-container {
+    text-align: center;
+    width: 100%;
+  }
+  .quien-soy-img-container img {
+    max-width: 90%;
+    max-height: 90%;
+    height: auto;
   }
   .contacto-page {
     display: flex;
