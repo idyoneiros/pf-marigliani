@@ -921,22 +921,24 @@ main {
     margin: 1em, 0;
   }
   .contacto-page {
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .contacto-form-img-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+    order: 1;
+    margin-bottom: 1em;
   }
-  .contacto-page-heading {
-    font-size: 2em;
-    color: #0C4222;
-    margin-bottom: 2em;
-    margin-top: 1em;
-    text-align: center;
+  .contacto-form-container {
+    order: 2;
+    margin: 0 auto;
+    padding: 0 1em;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .contacto-form {
+    width: 100%;
+    box-sizing: border-box;
   }
   .footer {
     width: 100%;
@@ -947,9 +949,9 @@ main {
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: baseline;
     margin: 0 auto;
-    padding: 2em;
+    padding: 1em;
   }
   .heading-footer {
     font-family: "DM Serif Display", serif;
@@ -974,7 +976,7 @@ main {
     color: #0C4222;
     font-size: 1.5em;
   }
-  .footer-logo-container {
+  .footer-logo-container, .footer-btn {
     display: none;
   }
 }
